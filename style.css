@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    flex-direction: row-reverse;
+    justify-content: start;
+    
+}
+
+.navList{
+    gap: 50px;
+    padding: 30px;
+    display: flex;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+ul li{
+    list-style: none;
+}
+
+#heroSection{
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1591218214141-45545921d2d9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: top -150px right 0px;
+    position: relative;
+}
+
+.overlay{
+    background: rgba(43,43,48,60%); 
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: 2;
+}
+
+#heroSection .text{
+    position: absolute;
+    z-index: 3;
+    margin-top: 400px;
+    left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    
+}
+
+#heroSection .text h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#heroSection .text p{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* profile UKM */
+
+#profileUKM{
+    padding: 100px 100px 0px 00px;
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+#profileUKM img{
+    width:550px;
+}
+
+#profileUKM .wrapperUKM{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 50%;
+}
+
+/* Gallery UKM */
+
+.container{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.container .wrapContainer{
+    gap: 27px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container img{
+    width: 25rem;
+    background-size: cover;
+}
+
+.container .wrapper{
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgb(241 245 249); 
+    padding: 20px;
+}
+
+.container .wrapper .text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.container .wrapper .imageWrap{
+    height: 200px;
+    overflow: hidden;
+}
+
+.container .wrapper h1{
+    color: #1a1a1a;
+    font-size: 25px;
+}
+
+.container .wrapper p{
+    color: #1a1a1a;
+    font-size: 15px;
+}
+
+/* footer */
+.containerFooter{
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgb(241 245 249);
+}
+
+/* page pendaftaran */
+form{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+form .formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 20px;
+    /* border: 1px solid rgb(226 232 240); */
+}
+
+input{
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: 15px;
+    border: 1px solid rgb(226 232 240);
+}
+
+input::placeholder{
+    color:  rgb(100 116 139);
+}
+
+textarea{
+    padding-top: 15px;
+    padding-left: 15px;
+    height: 100px;
+    border: none;
+    border: 1px solid rgb(226 232 240);
+}
+
+textarea::placeholder{
+    color: rgb(100 116 139);
+}
+
+form .formContainer button{
+    background-color: rgb(5 150 105);
+    color: #fff;
+    height: 30px;
+    border: none;
+}
+
+form .formContainer h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.wrapForm{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10rem;
+}
+
+.wrapForm img{
+    width: 500px;
+}
+
+.wrapForm .row{
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: 15px;
+    border: 1px solid rgb(226 232 240);
+    background-color: #fff;
+    color: rgb(100 116 139) ;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.formContainer .btnBatal{
+    background-color: rgb(220 38 38);
+}
+
+button{
+    width: 50%;
+    cursor: pointer;
+}
+
+/* Contact */
+.containerContact{
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center  ;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.containerContact .wrap h1{
+    font-size: 50px;
+}
+
+.containerContact .wrap a{
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+.containerContact .wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
