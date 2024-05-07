@@ -124,6 +124,19 @@ ul li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    animation-name: fadein;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0%;
+        top: 100px;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 0px;
+    }
 }
 
 .container img{
@@ -287,4 +300,25 @@ button{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media screen and (max-width: 768px){
+    #profileUKM {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    #Gallery{
+        margin-top: 200px;
+    }
+
+    .wrapForm{
+        padding: 100px 0px;
+    }
+
+    .wrapForm img{
+        display: none;
+    }
 }
