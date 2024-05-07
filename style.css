@@ -310,8 +310,12 @@ button{
         padding: 100px 0;
     }
 
-    #Gallery{
-        margin-top: 200px;
+    #profileUKM img{
+        width: 400px;
+    }
+
+    .container {
+        margin-top: 277px;
     }
 
     .wrapForm{
